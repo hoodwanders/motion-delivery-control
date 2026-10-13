@@ -1,0 +1,10 @@
+# Keep submission lean — studio working material must never be committed here.
+node_modules/
+.git/
+*.mp4
+*.mov
+output/
+dist/
+build/
+.DS_Store
+Thumbs.db
