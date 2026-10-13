@@ -3,16 +3,17 @@
 ## Delivery-standards source
 
 - Authority: `delivery-standards-source-index.md` (DS-1–DS-8, approved 13 October 2026).
-- Location at run time: `C:\Users\A-Med\Desktop\animation-studio` (HG-owned studio folder).
-- Resolution: `motion-delivery-folder/sources/studio-source-pointer.md` maps each DS ID to file + lines.
-- Mode: by reference, not copied — the studio folder is large and live (includes `.git/`, `node_modules/`, film renders). Copying it would duplicate bytes and risk drift.
+- Location at run time (paired-20261013-v2-01): `C:\Users\A-Med\Desktop\animation-studio` (HG-owned studio folder).
+- Vendored 14 October 2026: `motion-delivery-folder/sources/vendor-studio/` — verbatim copies of the 8 locked DS files (all hashes match originals). Contest review uses these copies; the absolute path is no longer required.
+- Resolution: `motion-delivery-folder/sources/studio-source-pointer.md` maps each DS ID to vendored file + lines (e.g. `sources/vendor-studio/workflows/studio/CONTEXT.md:4`).
+- Mode: vendored minimal copy — only the 8 DS files; no `.git/`, `node_modules/`, or renders.
 
-## Why the studio folder is not in this submission
+## Why only 8 files are vendored
 
-- It is HG-owned working material, not competition output, and too large to vendor.
-- Absolute paths (e.g. `C:\Users\A-Med\Desktop\animation-studio\workflows\studio\...`) are preserved verbatim in the raw treatment record and pointer as evidence of what was cited. They are not rewritable without falsifying the raw record.
+- The full studio folder is HG-owned working material and too large to vendor.
+- Absolute paths (e.g. `C:\Users\A-Med\Desktop\animation-studio\workflows\studio\...`) are preserved verbatim in the 13-Oct raw treatment record as evidence of what was cited then. They are not rewritten — the raw record is unedited. New runs cite `motion-delivery-folder/sources/vendor-studio/...`.
 
-## What judges can still verify without the studio folder
+## What judges can verify directly in this repo (no studio folder needed)
 
 - Question-to-source routes: `questions-v2.md` source-route column + `motion-delivery-folder/coverage-map.md` (15/15 mapped, Q15 explicit unavailability).
 - Citation shape: every treatment Q1–Q14 answer cites file + line/section; Q15 cites the coverage route and states the exact unavailability sentence.
@@ -21,8 +22,12 @@
 
 ## To reproduce fully
 
-- Obtain the studio folder at the pointer location (or update the pointer and re-verify DS line numbers per its Rule section), then re-run the v2 questions under the same model / order / settings.
+- Use the vendored copies under `motion-delivery-folder/sources/vendor-studio/`, then re-run the v2 questions under the same model / order / settings. No studio-folder access needed.
 
 ## Line drift
 
-- The studio folder is live; line numbers were verified 13 October 2026. If files moved, re-verify lines before treating citations as current.
+- Line numbers verified 13 October 2026 (pointer) and 14 October 2026 (vendored copies, hash-matched). If the live studio folder moved since, the vendored copies remain the locked evidence.
+
+## Results note
+
+- `paired-20261013-v2-01` treatment ran against the pointer version. The folder content is materially identical (byte-identical DS text), but citation paths changed to `sources/vendor-studio/...`. A fresh paired run with the vendored folder is required before the 28/30 treatment total can be claimed for this folder version.

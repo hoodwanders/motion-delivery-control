@@ -1,0 +1,44 @@
+{
+  "name": "animation-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Code-made films: five-step process, reference library, React/Canvas2D engine, gated master renders",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "setup": "npm ci && npx playwright install chromium && python -m pip install numpy opencv-python scipy",
+    "fonts": "node workflows/studio/06-build/tools/fetch-fonts.mjs",
+    "doctor": "node workflows/studio/cli/tools/studio.mjs doctor",
+    "new": "node workflows/studio/cli/tools/studio.mjs new",
+    "status": "node workflows/studio/cli/tools/studio.mjs status",
+    "refs": "node workflows/studio/cli/tools/studio.mjs refs",
+    "studio": "node workflows/studio/cli/tools/studio.mjs studio",
+    "check": "node workflows/studio/cli/tools/studio.mjs check",
+    "stills": "node workflows/studio/cli/tools/studio.mjs stills",
+    "strip": "node workflows/studio/cli/tools/studio.mjs strip",
+    "audio": "node workflows/studio/cli/tools/studio.mjs audio",
+    "preview": "node workflows/studio/cli/tools/studio.mjs preview",
+    "render": "node workflows/studio/cli/tools/studio.mjs render",
+    "qa": "node workflows/studio/cli/tools/studio.mjs qa",
+    "approve": "node workflows/studio/cli/tools/studio.mjs approve",
+    "repair": "node workflows/studio/cli/tools/studio.mjs repair",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "experiment": "node workflows/experiments/tools/experiment.mjs",
+    "experiment:audio": "node workflows/experiments/tools/audio-audit.mjs",
+    "experiment:fixtures": "python tests/experiments_test.py --evidence",
+    "test": "node --test --test-concurrency=1 workflows/studio/cli/tests/gates.test.mjs workflows/studio/cli/tests/lifecycle.test.mjs workflows/studio/cli/tests/paperfold.test.mjs workflows/experiments/tests/experiments.test.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.63.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "three": "^0.170.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  }
+}

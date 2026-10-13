@@ -22,7 +22,7 @@ Status: Stage 4 draft, not reviewed, not approved. This submission reports one p
 
 1. Read `questions-v2.md` (locked set) and `scoring-rules.md` (locked scale).
 2. Read `delivery-standards-source-index.md` (DS-1–DS-8 authority) and `SOURCE-NOTE.md` (source dependency).
-3. Read the folder: `motion-delivery-folder/` (`CLAUDE.md`, `CONTEXT.md`, `coverage-map.md`, `answer-rules.md`, `sources/studio-source-pointer.md`).
+3. Read the folder: `motion-delivery-folder/` (`CLAUDE.md`, `CONTEXT.md`, `coverage-map.md`, `answer-rules.md`, `sources/studio-source-pointer.md`, `sources/vendor-studio/` with the 8 vendored DS files).
 4. Read `run-register.md` (run identifier, order, storage, deviations).
 5. Read both raws unedited: `control-no-folder-paired-20261013-v2-01.md`, `treatment-with-folder-paired-20261013-v2-01.md`.
 6. Check `score-sheet.md` (per-question scores with raw evidence) — verify totals: control 7, treatment 28.
@@ -32,7 +32,7 @@ Status: Stage 4 draft, not reviewed, not approved. This submission reports one p
 
 | File | Origin |
 |---|---|
-| `motion-delivery-folder/` | Copy of `02-folder-preparation/output/motion-delivery-folder/` |
+| `motion-delivery-folder/` | Copy of `02-folder-preparation/output/motion-delivery-folder/` (vendored 14 Oct 2026: includes `sources/vendor-studio/` byte-identical DS-1–DS-8) |
 | `questions-v2.md` | Copy of `01-source-and-question-lock/output/questions-v2.md` |
 | `scoring-rules.md` | Copy of `01-source-and-question-lock/output/scoring-rules.md` |
 | `delivery-standards-source-index.md` | Copy of `01-source-and-question-lock/output/delivery-standards-source-index.md` |
@@ -43,4 +43,4 @@ Status: Stage 4 draft, not reviewed, not approved. This submission reports one p
 | `difference-report.md` | Copy of `04-comparison-and-report/output/difference-report.md` |
 | `evidence-stage4.md` | Copy of `04-comparison-and-report/references/evidence.md` |
 
-Raw files are byte copies; they were not edited for submission. Absolute local paths inside citations are preserved as evidence (see `SOURCE-NOTE.md`).
+Raw files are byte copies; they were not edited for submission. Absolute local paths inside the 13-Oct citations are preserved as evidence (see `SOURCE-NOTE.md`). The folder was vendored 14 Oct 2026 (same DS text, new `sources/vendor-studio/...` paths) — re-run the paired treatment with the vendored folder before claiming the 28/30 total for this folder version.

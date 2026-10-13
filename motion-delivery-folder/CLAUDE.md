@@ -1,7 +1,7 @@
 # Motion Delivery Standards Folder
 
-**Status:** Built 13 October 2026.  
-**Source:** DS-1–DS-8 approved (see `sources/studio-source-pointer.md`).  
+**Status:** Fixed 14 October 2026.  
+**Source:** DS-1–DS-8 vendored in `sources/vendor-studio/` (see `sources/studio-source-pointer.md`).  
 **Questions:** v2 locked. **Scoring:** v1.
 
 ## Purpose

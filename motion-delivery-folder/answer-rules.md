@@ -1,11 +1,11 @@
 # Answer Rules — questions v2
 
-**Status:** Built 13 October 2026.
+**Status:** Fixed 14 October 2026 — DS resolve to `sources/vendor-studio/` (vendored, checkable).
 
 ## General rules
 
 1. Check `coverage-map.md` first; use the DS route for the question number.
-2. Resolve DS IDs via `sources/studio-source-pointer.md`; cite the file and line/section.
+2. Resolve DS IDs via `sources/studio-source-pointer.md`; cite the vendored file and line/section (`sources/vendor-studio/<original path>:<lines>`).
 3. Quote or precisely reference the supporting rule; do not paraphrase away conditions (e.g. “current” plan approval, “continuously” watched, “their words” note).
 4. Distinguish source fact, procedure step, and interpretation.
 5. If DS sections conflict, report both and identify the conflict.
